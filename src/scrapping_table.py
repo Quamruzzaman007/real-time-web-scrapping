@@ -18,7 +18,6 @@ def scrape_data():
     oi_lakh_2 = driver.find_elements(by=By.XPATH,value="//div[@id='tableContainer']/div/div/div[3]/div/div/div[@class='rt-td'][7]/div/div/div[@class='style__OiprogressBarValue-sc-qybflf-2 fdVZcI']") if True else " "
     oi_change_2 = driver.find_elements(by=By.XPATH,value="//div[@id='tableContainer']/div/div/div[3]/div/div/div[@class='rt-td'][8]") if True else " "
     
-    
     result = []
     for i in range(len(oi_change)):
         temporary_data = {'OI_Change':oi_change[i].text,
